@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Repositories\Relations;
+namespace ZnBundle\Article\Domain\Repositories\Relations;
 
 use Illuminate\Support\Collection;
-use PhpBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use PhpLab\Core\Domain\Enums\RelationEnum;
-use PhpLab\Core\Domain\Interfaces\Repository\RelationConfigInterface;
-use PhpLab\Core\Domain\Libs\Relation\ManyToMany;
-use PhpLab\Core\Domain\Libs\Relation\OneToOne;
+use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use ZnCore\Base\Domain\Enums\RelationEnum;
+use ZnCore\Base\Domain\Interfaces\Repository\RelationConfigInterface;
+use ZnCore\Base\Domain\Libs\Relation\ManyToMany;
+use ZnCore\Base\Domain\Libs\Relation\OneToOne;
 
 class PostRelation implements RelationConfigInterface
 {

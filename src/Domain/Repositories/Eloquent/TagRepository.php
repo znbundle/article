@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Repositories\Eloquent;
+namespace ZnBundle\Article\Domain\Repositories\Eloquent;
 
-use PhpLab\Eloquent\Db\Base\BaseEloquentCrudRepository;
-use PhpBundle\Article\Domain\Entities\TagEntity;
-use PhpBundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use ZnCore\Db\Db\Base\BaseEloquentCrudRepository;
+use ZnBundle\Article\Domain\Entities\TagEntity;
+use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 
 class TagRepository extends BaseEloquentCrudRepository implements TagRepositoryInterface
 {

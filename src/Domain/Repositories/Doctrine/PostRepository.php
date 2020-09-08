@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Repositories\Doctrine;
+namespace ZnBundle\Article\Domain\Repositories\Doctrine;
 
 use Doctrine\DBAL\Connection;
-use PhpBundle\Article\Domain\Entities\PostEntity;
-use PhpBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\PostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use PhpBundle\Article\Domain\Repositories\Relations\PostRelation;
-use PhpLab\Eloquent\Db\Base\BaseDoctrineCrudRepository;
+use ZnBundle\Article\Domain\Entities\PostEntity;
+use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use ZnBundle\Article\Domain\Repositories\Relations\PostRelation;
+use ZnCore\Db\Db\Base\BaseDoctrineCrudRepository;
 
 class PostRepository extends BaseDoctrineCrudRepository implements PostRepositoryInterface
 {

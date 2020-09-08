@@ -1,16 +1,16 @@
 <?php
 
-namespace PhpBundle\Article\Symfony\Web\Controllers;
+namespace ZnBundle\Article\Symfony\Web\Controllers;
 
-use PhpLab\Core\Domain\Entities\DataProviderEntity;
-use PhpLab\Core\Domain\Helpers\QueryHelper;
-use PhpLab\Core\Domain\Libs\DataProvider;
-use PhpLab\Core\Domain\Libs\Query;
-use PhpLab\Core\Legacy\Yii\Helpers\ArrayHelper;
-use PhpLab\Rest\Web\Controller\BaseCrudWebController;
-use PhpBundle\Article\Domain\Interfaces\PostServiceInterface;
-use PhpBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
-use PhpBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
+use ZnCore\Base\Domain\Entities\DataProviderEntity;
+use ZnCore\Base\Domain\Helpers\QueryHelper;
+use ZnCore\Base\Domain\Libs\DataProvider;
+use ZnCore\Base\Domain\Libs\Query;
+use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
+use ZnLib\Rest\Web\Controller\BaseCrudWebController;
+use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
+use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
+use ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

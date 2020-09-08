@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Entities;
+namespace ZnBundle\Article\Domain\Entities;
 
-use PhpLab\Core\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
 
 class CategoryEntity implements EntityIdInterface
 {

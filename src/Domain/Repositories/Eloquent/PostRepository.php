@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Repositories\Eloquent;
+namespace ZnBundle\Article\Domain\Repositories\Eloquent;
 
-use PhpBundle\Article\Domain\Entities\PostEntity;
-use PhpBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\PostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use PhpBundle\Article\Domain\Repositories\Relations\PostRelation;
-use PhpLab\Eloquent\Db\Base\BaseEloquentCrudRepository;
-use PhpLab\Eloquent\Db\Helpers\Manager;
+use ZnBundle\Article\Domain\Entities\PostEntity;
+use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use ZnBundle\Article\Domain\Repositories\Relations\PostRelation;
+use ZnCore\Db\Db\Base\BaseEloquentCrudRepository;
+use ZnCore\Db\Db\Helpers\Manager;
 
 class PostRepository extends BaseEloquentCrudRepository implements PostRepositoryInterface
 {

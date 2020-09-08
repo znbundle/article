@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpBundle\Article\Symfony\Api\Controllers;
+namespace ZnBundle\Article\Symfony\Api\Controllers;
 
-use PhpLab\Rest\Base\BaseCrudApiController;
-use PhpBundle\Article\Domain\Interfaces\PostServiceInterface;
+use ZnLib\Rest\Base\BaseCrudApiController;
+use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
 
 class ArticleController extends BaseCrudApiController
 {

@@ -1,23 +1,23 @@
 <?php
 
-namespace PhpBundle\Article\Symfony\Api;
+namespace ZnBundle\Article\Symfony\Api;
 
 use Doctrine\DBAL\Connection;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
-use PhpBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\PostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\PostServiceInterface;
-use PhpBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use PhpBundle\Article\Domain\Repositories\Doctrine\PostRepository;
-use PhpBundle\Article\Domain\Repositories\Eloquent\CategoryRepository;
-use PhpBundle\Article\Domain\Repositories\Eloquent\TagPostRepository;
-use PhpBundle\Article\Domain\Repositories\Eloquent\TagRepository;
-use PhpBundle\Article\Domain\Services\PostService;
-use PhpBundle\Article\Symfony\Api\Controllers\ArticleController;
-use PhpLab\Eloquent\Db\Helpers\DoctrineHelper;
-use PhpLab\Eloquent\Db\Helpers\Manager;
-use PhpLab\Rest\Helpers\RestApiRouteHelper;
+use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
+use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use ZnBundle\Article\Domain\Repositories\Doctrine\PostRepository;
+use ZnBundle\Article\Domain\Repositories\Eloquent\CategoryRepository;
+use ZnBundle\Article\Domain\Repositories\Eloquent\TagPostRepository;
+use ZnBundle\Article\Domain\Repositories\Eloquent\TagRepository;
+use ZnBundle\Article\Domain\Services\PostService;
+use ZnBundle\Article\Symfony\Api\Controllers\ArticleController;
+use ZnCore\Db\Db\Helpers\DoctrineHelper;
+use ZnCore\Db\Db\Helpers\Manager;
+use ZnLib\Rest\Helpers\RestApiRouteHelper;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Routing\RouteCollection;
 

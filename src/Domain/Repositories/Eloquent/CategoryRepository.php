@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Repositories\Eloquent;
+namespace ZnBundle\Article\Domain\Repositories\Eloquent;
 
-use PhpBundle\Article\Domain\Entities\CategoryEntity;
-use PhpBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use PhpLab\Eloquent\Db\Base\BaseEloquentCrudRepository;
+use ZnBundle\Article\Domain\Entities\CategoryEntity;
+use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use ZnCore\Db\Db\Base\BaseEloquentCrudRepository;
 
 class CategoryRepository extends BaseEloquentCrudRepository implements CategoryRepositoryInterface
 {

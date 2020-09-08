@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Entities;
+namespace ZnBundle\Article\Domain\Entities;
 
 use DateTime;
 use Illuminate\Support\Collection;
-use PhpLab\Core\Domain\Interfaces\Entity\EntityIdInterface;
-use PhpLab\Core\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Base\Domain\Interfaces\Entity\ValidateEntityInterface;
 use Symfony\Component\Validator\Constraints;
 
 class PostEntity implements ValidateEntityInterface, EntityIdInterface

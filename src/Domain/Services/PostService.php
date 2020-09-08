@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpBundle\Article\Domain\Services;
+namespace ZnBundle\Article\Domain\Services;
 
-use PhpLab\Core\Domain\Interfaces\GetEntityClassInterface;
-use PhpLab\Core\Domain\Base\BaseCrudService;
-use PhpBundle\Article\Domain\Interfaces\PostRepositoryInterface;
-use PhpBundle\Article\Domain\Interfaces\PostServiceInterface;
+use ZnCore\Base\Domain\Interfaces\GetEntityClassInterface;
+use ZnCore\Base\Domain\Base\BaseCrudService;
+use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
+use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
 
 /**
  * Class PostService
- * @package PhpBundle\Article\Domain\Services
+ * @package ZnBundle\Article\Domain\Services
  *
  * @property PostRepositoryInterface | GetEntityClassInterface $repository
  */
