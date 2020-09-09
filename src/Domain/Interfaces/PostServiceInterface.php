@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Article\Domain\Interfaces;
 
-use ZnCore\Base\Domain\Interfaces\Service\CrudServiceInterface;
+use ZnCore\Domain\Interfaces\Service\CrudServiceInterface;
 
 interface PostServiceInterface extends CrudServiceInterface
 {

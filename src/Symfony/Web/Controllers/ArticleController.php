@@ -2,10 +2,10 @@
 
 namespace ZnBundle\Article\Symfony\Web\Controllers;
 
-use ZnCore\Base\Domain\Entities\DataProviderEntity;
-use ZnCore\Base\Domain\Helpers\QueryHelper;
-use ZnCore\Base\Domain\Libs\DataProvider;
-use ZnCore\Base\Domain\Libs\Query;
+use ZnCore\Domain\Entities\DataProviderEntity;
+use ZnCore\Domain\Helpers\QueryHelper;
+use ZnCore\Domain\Libs\DataProvider;
+use ZnCore\Domain\Libs\Query;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use ZnLib\Rest\Web\Controller\BaseCrudWebController;
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;

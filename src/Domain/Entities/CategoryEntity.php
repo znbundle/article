@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Article\Domain\Entities;
 
-use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
 
 class CategoryEntity implements EntityIdInterface
 {

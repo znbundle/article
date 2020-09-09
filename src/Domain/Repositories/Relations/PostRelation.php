@@ -6,10 +6,10 @@ use Illuminate\Support\Collection;
 use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use ZnCore\Base\Domain\Enums\RelationEnum;
-use ZnCore\Base\Domain\Interfaces\Repository\RelationConfigInterface;
-use ZnCore\Base\Domain\Libs\Relation\ManyToMany;
-use ZnCore\Base\Domain\Libs\Relation\OneToOne;
+use ZnCore\Domain\Enums\RelationEnum;
+use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
+use ZnCore\Domain\Libs\Relation\ManyToMany;
+use ZnCore\Domain\Libs\Relation\OneToOne;
 
 class PostRelation implements RelationConfigInterface
 {

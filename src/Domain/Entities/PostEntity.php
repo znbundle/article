@@ -4,8 +4,8 @@ namespace ZnBundle\Article\Domain\Entities;
 
 use DateTime;
 use Illuminate\Support\Collection;
-use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
-use ZnCore\Base\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Domain\Interfaces\Entity\ValidateEntityInterface;
 use Symfony\Component\Validator\Constraints;
 
 class PostEntity implements ValidateEntityInterface, EntityIdInterface
