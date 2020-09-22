@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Article\Symfony\Api\Controllers;
+namespace ZnBundle\Article\Symfony4\Api\Controllers;
 
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
 use ZnLib\Rest\Base\BaseCrudApiController;

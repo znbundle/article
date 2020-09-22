@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Article\Symfony\Web\Controllers;
+namespace ZnBundle\Article\Symfony4\Web\Controllers;
 
 use ZnCore\Domain\Entities\DataProviderEntity;
 use ZnCore\Domain\Helpers\QueryHelper;

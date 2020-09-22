@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Article\Symfony\Api;
+namespace ZnBundle\Article\Symfony4\Api;
 
 use Doctrine\DBAL\Connection;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
@@ -14,7 +14,7 @@ use ZnBundle\Article\Domain\Repositories\Eloquent\CategoryRepository;
 use ZnBundle\Article\Domain\Repositories\Eloquent\TagPostRepository;
 use ZnBundle\Article\Domain\Repositories\Eloquent\TagRepository;
 use ZnBundle\Article\Domain\Services\PostService;
-use ZnBundle\Article\Symfony\Api\Controllers\ArticleController;
+use ZnBundle\Article\Symfony4\Api\Controllers\ArticleController;
 use ZnCore\Db\Db\Helpers\DoctrineHelper;
 use ZnCore\Db\Db\Helpers\Manager;
 use ZnLib\Rest\Helpers\RestApiRouteHelper;
