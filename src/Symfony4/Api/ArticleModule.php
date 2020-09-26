@@ -4,6 +4,8 @@ namespace ZnBundle\Article\Symfony4\Api;
 
 use Doctrine\DBAL\Connection;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
+use Psr\Container\ContainerInterface;
+use Symfony\Component\Routing\RouteCollection;
 use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
@@ -17,9 +19,7 @@ use ZnBundle\Article\Domain\Services\PostService;
 use ZnBundle\Article\Symfony4\Api\Controllers\ArticleController;
 use ZnCore\Db\Db\Helpers\DoctrineHelper;
 use ZnCore\Db\Db\Helpers\Manager;
-use ZnLib\Rest\Helpers\RestApiRouteHelper;
-use Psr\Container\ContainerInterface;
-use Symfony\Component\Routing\RouteCollection;
+use ZnLib\Rest\Symfony4\Helpers\RestApiRouteHelper;
 
 class ArticleModule
 {
