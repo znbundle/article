@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Article\Domain\Repositories\Eloquent;
 
-use ZnCore\Db\Db\Base\BaseEloquentCrudRepository;
+use ZnLib\Db\Base\BaseEloquentCrudRepository;
 use ZnBundle\Article\Domain\Entities\PostTagEntity;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 

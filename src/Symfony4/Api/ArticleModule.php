@@ -17,8 +17,8 @@ use ZnBundle\Article\Domain\Repositories\Eloquent\TagPostRepository;
 use ZnBundle\Article\Domain\Repositories\Eloquent\TagRepository;
 use ZnBundle\Article\Domain\Services\PostService;
 use ZnBundle\Article\Symfony4\Api\Controllers\ArticleController;
-use ZnCore\Db\Db\Capsule\Manager;
-use ZnCore\Db\Db\Facades\DoctrineFacade;
+use ZnLib\Db\Capsule\Manager;
+use ZnLib\Db\Facades\DoctrineFacade;
 use ZnLib\Rest\Symfony4\Helpers\RestApiRouteHelper;
 
 class ArticleModule

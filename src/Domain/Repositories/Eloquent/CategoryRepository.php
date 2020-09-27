@@ -4,7 +4,7 @@ namespace ZnBundle\Article\Domain\Repositories\Eloquent;
 
 use ZnBundle\Article\Domain\Entities\CategoryEntity;
 use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use ZnCore\Db\Db\Base\BaseEloquentCrudRepository;
+use ZnLib\Db\Base\BaseEloquentCrudRepository;
 
 class CategoryRepository extends BaseEloquentCrudRepository implements CategoryRepositoryInterface
 {
