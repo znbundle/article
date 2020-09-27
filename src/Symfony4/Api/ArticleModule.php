@@ -17,8 +17,8 @@ use ZnBundle\Article\Domain\Repositories\Eloquent\TagPostRepository;
 use ZnBundle\Article\Domain\Repositories\Eloquent\TagRepository;
 use ZnBundle\Article\Domain\Services\PostService;
 use ZnBundle\Article\Symfony4\Api\Controllers\ArticleController;
-use ZnCore\Db\Db\Helpers\DoctrineHelper;
-use ZnCore\Db\Db\Helpers\Manager;
+use ZnCore\Db\Db\Capsule\Manager;
+use ZnCore\Db\Db\Facades\DoctrineFacade;
 use ZnLib\Rest\Symfony4\Helpers\RestApiRouteHelper;
 
 class ArticleModule
@@ -33,7 +33,7 @@ class ArticleModule
     {
         $container->bind(CapsuleManager::class, Manager::class);
         $container->bind(Connection::class, function () {
-            return DoctrineHelper::createConnection();
+            return DoctrineFacade::createConnection();
         });
         $container->bind(CategoryRepositoryInterface::class, CategoryRepository::class);
         $container->bind(TagRepositoryInterface::class, TagRepository::class, true);
