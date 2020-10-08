@@ -19,7 +19,7 @@ use ZnBundle\Article\Domain\Services\PostService;
 use ZnBundle\Article\Symfony4\Api\Controllers\ArticleController;
 use ZnLib\Db\Capsule\Manager;
 use ZnLib\Db\Facades\DoctrineFacade;
-use ZnLib\Rest\Symfony4\Helpers\RestApiRouteHelper;
+use ZnLib\Rest\Helpers\RestApiRouteHelper;
 
 class ArticleModule
 {
