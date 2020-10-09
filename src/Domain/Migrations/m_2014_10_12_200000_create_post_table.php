@@ -18,7 +18,7 @@ class m_2014_10_12_200000_create_post_table extends BaseCreateTableMigration
             $table->integer('id')->autoIncrement()->comment('Идентификатор');
             $table->integer('category_id')->comment('ID категории');
             $table->string('title')->comment('Заголовок статьи');
-            $table->dateTime('created_at');
+            $table->dateTime('created_at')->comment('Время создания');
             $table
                 ->foreign('category_id')
                 ->references('id')
