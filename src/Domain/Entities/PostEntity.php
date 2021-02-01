@@ -4,11 +4,12 @@ namespace ZnBundle\Article\Domain\Entities;
 
 use DateTime;
 use Illuminate\Support\Collection;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
-use ZnCore\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 use Symfony\Component\Validator\Constraints;
 
-class PostEntity implements ValidateEntityInterface, EntityIdInterface
+class PostEntity implements ValidateEntityByMetadataInterface, EntityIdInterface
 {
 
     private $id;
@@ -18,6 +19,13 @@ class PostEntity implements ValidateEntityInterface, EntityIdInterface
 
     private $category;
     private $tags;
+
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addPropertyConstraint('title', new Assert\NotBlank);
+        $metadata->addPropertyConstraint('title', Constraints\Length(['min' => 3]));
+        $metadata->addPropertyConstraint('created_at', new Assert\NotBlank);
+    }
 
     public function getId()
     {
@@ -82,19 +90,6 @@ class PostEntity implements ValidateEntityInterface, EntityIdInterface
     public function setTags(Collection $tags): void
     {
         $this->tags = $tags;
-    }
-
-    public function validationRules(): array
-    {
-        return [
-            'title' => [
-                new Constraints\Length(['min' => 3]),
-                new Constraints\NotBlank,
-            ],
-            'created_at' => [
-                new Constraints\DateTime,
-            ],
-        ];
     }
 
 }
