@@ -18,7 +18,7 @@ class PostService extends BaseCrudService implements PostServiceInterface
 
     public function __construct(PostRepositoryInterface $repository)
     {
-        $this->repository = $repository;
+        $this->setRepository($repository);
     }
 
 }
