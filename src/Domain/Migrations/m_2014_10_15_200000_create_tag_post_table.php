@@ -18,7 +18,11 @@ class m_2014_10_15_200000_create_tag_post_table extends BaseCreateTableMigration
             $table->integer('id')->autoIncrement()->comment('Идентификатор');
             $table->integer('tag_id')->comment('ID тэга');
             $table->integer('post_id')->comment('ID поста');
-            $table
+
+            $this->addForeign($table, 'tag_id', 'article_tag');
+            $this->addForeign($table, 'post_id', 'article_post');
+
+            /*$table
                 ->foreign('tag_id')
                 ->references('id')
                 ->on($this->encodeTableName('article_tag'))
@@ -29,7 +33,7 @@ class m_2014_10_15_200000_create_tag_post_table extends BaseCreateTableMigration
                 ->references('id')
                 ->on($this->encodeTableName('article_post'))
                 ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);
+                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 
