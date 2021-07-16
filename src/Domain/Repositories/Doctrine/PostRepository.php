@@ -9,9 +9,10 @@ use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use ZnBundle\Article\Domain\Repositories\Relations\PostRelation;
+use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
 use ZnLib\Db\Base\BaseDoctrineCrudRepository;
 
-class PostRepository extends BaseDoctrineCrudRepository implements PostRepositoryInterface
+class PostRepository extends BaseDoctrineCrudRepository implements PostRepositoryInterface, RelationConfigInterface
 {
 
     protected $tableName = 'article_post';
