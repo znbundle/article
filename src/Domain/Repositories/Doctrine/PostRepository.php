@@ -10,7 +10,7 @@ use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use ZnBundle\Article\Domain\Repositories\Relations\PostRelation;
 use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
-use ZnLib\Db\Base\BaseDoctrineCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseDoctrineCrudRepository;
 
 class PostRepository extends BaseDoctrineCrudRepository implements PostRepositoryInterface, RelationConfigInterface
 {

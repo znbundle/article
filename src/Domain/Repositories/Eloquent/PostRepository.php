@@ -9,8 +9,8 @@ use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use ZnBundle\Article\Domain\Repositories\Relations\PostRelation;
 use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
-use ZnLib\Db\Capsule\Manager;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Capsule\Manager;
 
 class PostRepository extends BaseEloquentCrudRepository implements PostRepositoryInterface, RelationConfigInterface
 {
