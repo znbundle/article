@@ -11,7 +11,7 @@ use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
 use ZnCore\Domain\Libs\Relation\ManyToMany;
 use ZnCore\Domain\Libs\Relation\OneToOne;
 
-class PostRelation implements RelationConfigInterface
+class PostRelation
 {
 
     private $categoryRepository;

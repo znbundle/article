@@ -12,7 +12,7 @@ use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnDatabase\Eloquent\Domain\Capsule\Manager;
 
-class PostRepository extends BaseEloquentCrudRepository implements PostRepositoryInterface, RelationConfigInterface
+class PostRepository extends BaseEloquentCrudRepository implements PostRepositoryInterface
 {
 
     protected $tableName = 'article_post';
@@ -29,9 +29,9 @@ class PostRepository extends BaseEloquentCrudRepository implements PostRepositor
         return PostEntity::class;
     }
 
-    public function relations()
+    /*public function relations()
     {
         return $this->relation->relations();
-    }
+    }*/
 
 }
