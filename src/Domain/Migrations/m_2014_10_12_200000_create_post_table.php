@@ -21,13 +21,6 @@ class m_2014_10_12_200000_create_post_table extends BaseCreateTableMigration
             $table->dateTime('created_at')->comment('Время создания');
 
             $this->addForeign($table, 'category_id', 'article_category');
-
-            /*$table
-                ->foreign('category_id')
-                ->references('id')
-                ->on($this->encodeTableName('article_category'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 
