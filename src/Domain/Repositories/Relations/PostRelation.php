@@ -7,7 +7,7 @@ use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use ZnCore\Domain\Enums\RelationEnum;
-use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
+use ZnCore\Base\Libs\Repository\Interfaces\RelationConfigInterface;
 use ZnCore\Domain\Libs\Relation\ManyToMany;
 use ZnCore\Domain\Libs\Relation\OneToOne;
 

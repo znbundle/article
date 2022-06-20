@@ -3,7 +3,7 @@
 namespace ZnBundle\Article\Domain\Services;
 
 use ZnCore\Domain\Interfaces\GetEntityClassInterface;
-use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Base\Libs\Service\Base\BaseCrudService;
 use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
 

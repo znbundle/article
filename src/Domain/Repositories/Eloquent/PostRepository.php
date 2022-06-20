@@ -8,7 +8,7 @@ use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use ZnBundle\Article\Domain\Repositories\Relations\PostRelation;
-use ZnCore\Domain\Interfaces\Repository\RelationConfigInterface;
+use ZnCore\Base\Libs\Repository\Interfaces\RelationConfigInterface;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnDatabase\Eloquent\Domain\Capsule\Manager;
 
