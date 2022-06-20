@@ -2,10 +2,10 @@
 
 namespace ZnBundle\Article\Symfony4\Web\Controllers;
 
-use ZnCore\Domain\Entities\DataProviderEntity;
-use ZnCore\Domain\Helpers\QueryHelper;
-use ZnCore\Domain\Libs\DataProvider;
-use ZnCore\Domain\Libs\Query;
+use ZnCore\Base\Libs\DataProvider\Entities\DataProviderEntity;
+use ZnCore\Base\Libs\Query\Helpers\QueryHelper;
+use ZnCore\Base\Libs\DataProvider\Libs\DataProvider;
+use ZnCore\Base\Libs\Query\Entities\Query;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use ZnLib\Rest\Web\Controller\BaseCrudWebController;
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
@@ -14,6 +14,7 @@ use ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use ZnLib\Web\Helpers\WebQueryHelper;
 
 class ArticleController extends AbstractController
 {
@@ -29,7 +30,7 @@ class ArticleController extends AbstractController
 
     public function index(Request $request): Response
     {
-        $query = QueryHelper::getAllParams($request->query->all());
+        $query = WebQueryHelper::getAllParams($request->query->all());
         $query->with('category');
 
         $page = $request->get("page", 1);
