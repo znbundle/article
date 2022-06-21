@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Article\Domain\Entities;
 
-use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
+use ZnCore\Base\Libs\Entity\Interfaces\EntityIdInterface;
 
 class PostTagEntity implements EntityIdInterface
 {
