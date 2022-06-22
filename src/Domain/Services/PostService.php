@@ -2,8 +2,8 @@
 
 namespace ZnBundle\Article\Domain\Services;
 
-use ZnCore\Base\Libs\Domain\Interfaces\GetEntityClassInterface;
-use ZnCore\Base\Libs\Service\Base\BaseCrudService;
+use ZnCore\Domain\Domain\Interfaces\GetEntityClassInterface;
+use ZnCore\Domain\Service\Base\BaseCrudService;
 use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
 
