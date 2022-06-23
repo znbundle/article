@@ -6,7 +6,7 @@ use ZnCore\Domain\DataProvider\Entities\DataProviderEntity;
 use ZnCore\Domain\Query\Helpers\QueryHelper;
 use ZnCore\Domain\DataProvider\Libs\DataProvider;
 use ZnCore\Domain\Query\Entities\Query;
-use ZnCore\Base\Libs\Arr\Helpers\ArrayHelper;
+use ZnCore\Base\Arr\Helpers\ArrayHelper;
 use ZnLib\Rest\Web\Controller\BaseCrudWebController;
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
 use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;

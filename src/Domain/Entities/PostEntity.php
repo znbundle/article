@@ -6,7 +6,7 @@ use DateTime;
 use Illuminate\Support\Collection;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints;
 
 class PostEntity implements ValidationByMetadataInterface, EntityIdInterface
