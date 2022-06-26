@@ -14,7 +14,7 @@ use ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Web\Helpers\WebQueryHelper;
+use ZnLib\Web\Components\Controller\Helpers\WebQueryHelper;
 
 class ArticleController extends AbstractController
 {
