@@ -46,7 +46,7 @@ class ArticleController extends AbstractController
     {
         $query = new Query;
         $query->with('category');
-        $entity = $this->service->oneById($id, $query);
+        $entity = $this->service->findOneById($id, $query);
         return $this->render('@Article/post/view.html.twig', [
             'post' => $entity,
         ]);
@@ -61,7 +61,7 @@ class ArticleController extends AbstractController
     {
         $query = new Query;
         $query->with('category');
-        $entity = $this->service->oneById($id, $query);
+        $entity = $this->service->findOneById($id, $query);
         return $this->render('@Article/post/update.html.twig', [
             'post' => $entity,
         ]);
