@@ -3,7 +3,7 @@
 namespace ZnBundle\Article\Domain\Entities;
 
 use DateTime;
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
