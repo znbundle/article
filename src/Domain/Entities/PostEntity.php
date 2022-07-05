@@ -7,7 +7,6 @@ use Symfony\Component\Validator\Constraints;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 
 class PostEntity implements ValidationByMetadataInterface, EntityIdInterface

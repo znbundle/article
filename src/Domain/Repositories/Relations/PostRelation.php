@@ -2,15 +2,13 @@
 
 namespace ZnBundle\Article\Domain\Repositories\Relations;
 
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use ZnCore\Domain\Enums\RelationEnum;
-use ZnCore\Domain\Repository\Interfaces\RelationConfigInterface;
 use ZnCore\Domain\Libs\Relation\ManyToMany;
 use ZnCore\Domain\Libs\Relation\OneToOne;
+use ZnCore\Domain\Repository\Interfaces\RelationConfigInterface;
 
 class PostRelation
 {
@@ -26,7 +24,8 @@ class PostRelation
         $this->tagRepository = $tagRepository;
     }
 
-    public function primaryKey() {
+    public function primaryKey()
+    {
         return ['id'];
     }
 
