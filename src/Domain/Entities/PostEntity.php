@@ -3,11 +3,12 @@
 namespace ZnBundle\Article\Domain\Entities;
 
 use DateTime;
-use ZnCore\Domain\Collection\Libs\Collection;
-use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
+use ZnCore\Domain\Collection\Libs\Collection;
+use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 
 class PostEntity implements ValidationByMetadataInterface, EntityIdInterface
 {
@@ -87,7 +88,7 @@ class PostEntity implements ValidationByMetadataInterface, EntityIdInterface
         return $this->tags;
     }
 
-    public function setTags(Collection $tags): void
+    public function setTags(Enumerable $tags): void
     {
         $this->tags = $tags;
     }

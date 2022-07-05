@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Article\Domain\Repositories\Relations;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
@@ -40,7 +41,7 @@ class PostRelation
 //                    'field' => 'id',
 //                ],*/
 //                'type' => RelationEnum::CALLBACK,
-//                'callback' => function (Collection $collection) {
+//                'callback' => function (Enumerable $collection) {
 //                    $m2m = new OneToOne;
 //                    //$m2m->selfModel = $this;
 //
@@ -53,7 +54,7 @@ class PostRelation
 //            ],
 //            'tags' => [
 //                'type' => RelationEnum::CALLBACK,
-//                'callback' => function (Collection $collection) {
+//                'callback' => function (Enumerable $collection) {
 //                    $m2m = new ManyToMany;
 //                    $m2m->selfModel = $this;
 //                    $m2m->selfField = 'postId';
