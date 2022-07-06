@@ -8,7 +8,7 @@ use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use ZnCore\Domain\Enums\RelationEnum;
 use ZnCore\Domain\Libs\Relation\ManyToMany;
 use ZnCore\Domain\Libs\Relation\OneToOne;
-use ZnCore\Domain\Repository\Interfaces\RelationConfigInterface;
+use ZnCore\Repository\Interfaces\RelationConfigInterface;
 
 class PostRelation
 {
