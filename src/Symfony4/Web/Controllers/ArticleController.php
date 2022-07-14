@@ -2,9 +2,9 @@
 
 namespace ZnBundle\Article\Symfony4\Web\Controllers;
 
-use ZnCore\DataProvider\Entities\DataProviderEntity;
+use ZnDomain\DataProvider\Entities\DataProviderEntity;
 use ZnCore\Query\Helpers\QueryHelper;
-use ZnCore\DataProvider\Libs\DataProvider;
+use ZnDomain\DataProvider\Libs\DataProvider;
 use ZnCore\Query\Entities\Query;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnLib\Rest\Web\Controller\BaseCrudWebController;

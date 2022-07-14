@@ -5,10 +5,10 @@ namespace ZnBundle\Article\Domain\Repositories\Relations;
 use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use ZnCore\Domain\Enums\RelationEnum;
-use ZnCore\Domain\Libs\Relation\ManyToMany;
-use ZnCore\Domain\Libs\Relation\OneToOne;
-use ZnCore\Repository\Interfaces\RelationConfigInterface;
+use ZnDomain\Domain\Enums\RelationEnum;
+use ZnDomain\Domain\Libs\Relation\ManyToMany;
+use ZnDomain\Domain\Libs\Relation\OneToOne;
+use ZnDomain\Repository\Interfaces\RelationConfigInterface;
 
 class PostRelation
 {
