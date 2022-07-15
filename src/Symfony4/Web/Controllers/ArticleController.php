@@ -3,9 +3,9 @@
 namespace ZnBundle\Article\Symfony4\Web\Controllers;
 
 use ZnDomain\DataProvider\Entities\DataProviderEntity;
-use ZnCore\Query\Helpers\QueryHelper;
+use ZnDomain\Query\Helpers\QueryHelper;
 use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnLib\Rest\Web\Controller\BaseCrudWebController;
 use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;

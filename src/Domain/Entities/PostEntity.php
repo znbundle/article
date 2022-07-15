@@ -5,9 +5,9 @@ namespace ZnBundle\Article\Domain\Entities;
 use DateTime;
 use Symfony\Component\Validator\Constraints;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
 
 class PostEntity implements ValidationByMetadataInterface, EntityIdInterface
 {
